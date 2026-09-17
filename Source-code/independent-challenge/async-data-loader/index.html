@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Independent Challenge - Async Data Loader</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Motivasi Belajar</h1>
+        <div class="card">
+            <div id="content-area" class="content-box">
+                <!-- State: Empty (Awal) -->
+                <p id="empty-state" class="state-text">Klik tombol di bawah untuk memuat kutipan penyemangat.</p>
+                
+                <!-- State: Loading -->
+                <p id="loading-state" class="state-text hidden">Memuat data...</p>
+                
+                <!-- State: Error -->
+                <div id="error-state" class="hidden">
+                    <p class="state-text error-text">Terjadi kesalahan saat memuat data. (Simulasi Gagal)</p>
+                </div>
+                
+                <!-- State: Success / Data -->
+                <p id="quote-text" class="quote hidden"></p>
+            </div>
+            
+            <div class="actions">
+                <button id="btn-load" type="button">Muat Data</button>
+            </div>
+        </div>
+    </main>
+    <script src="js/app.js" defer></script>
+</body>
+</html>
