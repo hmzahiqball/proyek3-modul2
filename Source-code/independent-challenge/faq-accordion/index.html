@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Independent Challenge - FAQ Accordion</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Frequently Asked Questions</h1>
+        <div class="accordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="faq1">
+                        Apa itu JavaScript?
+                    </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        JavaScript adalah bahasa pemrograman yang digunakan untuk membuat halaman web menjadi interaktif, dinamis, dan merespons tindakan pengguna.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="faq2">
+                        Bagaimana cara kerja FAQ Accordion ini?
+                    </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Accordion bekerja dengan mendengarkan event <code>click</code> pada setiap tombol. Ketika ditekan, ia akan menutup semua jawaban yang terbuka, lalu membuka jawaban yang terkait dengan tombol tersebut menggunakan manipulasi <code>classList</code> dan atribut <code>aria-expanded</code>.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" aria-expanded="false" aria-controls="faq3">
+                        Apakah Accordion ini ramah Aksesibilitas (Keyboard)?
+                    </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Ya! Dengan menggunakan elemen <code>&lt;button&gt;</code> secara semantik, navigasi melalui tombol <strong>Tab</strong> dan aktivasi melalui <strong>Enter</strong> atau <strong>Spasi</strong> akan berfungsi secara otomatis (bawaan browser).
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/app.js" defer></script>
+</body>
+</html>
