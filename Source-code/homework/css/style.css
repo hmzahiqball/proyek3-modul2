@@ -1,0 +1,152 @@
+:root {
+  --bg-color: #f4f4f9;
+  --card-bg: #ffffff;
+  --text-color: #333333;
+  --primary-color: #007bff;
+  --btn-hover: #0056b3;
+  --border-color: #ddd;
+  --error-color: #dc3545;
+}
+
+body.dark-theme {
+  --bg-color: #1a1a2e;
+  --card-bg: #16213e;
+  --text-color: #e9e9eb;
+  --primary-color: #e94560;
+  --btn-hover: #c9354e;
+  --border-color: #0f3460;
+  --error-color: #ff4c4c;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-toggle-container {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: var(--btn-hover);
+}
+
+.card-container {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.profile-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.profile-header h2 {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+  font-weight: normal;
+  color: gray;
+}
+
+#detail-toggle {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.details-section {
+  padding: 1rem;
+  background-color: rgba(0,0,0,0.05);
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.skills-section h3 {
+  margin-top: 0;
+}
+
+#skill-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#skill-input {
+  flex-grow: 1;
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.error-msg {
+  color: var(--error-color);
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+#skill-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#skill-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.delete-btn {
+  background-color: var(--error-color);
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+}
+
+.delete-btn:hover {
+  background-color: darkred;
+}
+
+.state-message {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.btn-retry {
+  margin-top: 1rem;
+}
