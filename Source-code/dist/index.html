@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inovatech - Solusi Digital Masa Depan</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body class="light-theme">
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo">Inovatech</div>
+      <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Buka menu navigasi">
+        <span class="hamburger"></span>
+      </button>
+      <nav id="main-nav" class="nav">
+        <ul>
+          <li><a href="#hero">Beranda</a></li>
+          <li><a href="#features">Layanan</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Kontak</a></li>
+          <li><a href="#"><button id="theme-toggle" class="btn-theme" aria-label="Ganti Tema">Dark Mode</button></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <h1>Inovasi Digital untuk Bisnis Anda</h1>
+      <p>Kami menyediakan layanan teknologi terbaik untuk membantu perusahaan Anda tumbuh lebih cepat.</p>
+      <a href="#contact" class="btn btn-primary">Mulai Sekarang</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features section">
+    <div class="container">
+      <h2>Layanan Kami</h2>
+      <div class="filter-controls">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="design">Desain</button>
+      </div>
+      <div id="features-container" class="features-grid">
+        <!-- Fitur akan dirender melalui JavaScript -->
+      </div>
+      <div id="features-empty" class="empty-state hidden">
+        Tidak ada layanan yang sesuai dengan filter ini.
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="faq section">
+    <div class="container">
+      <h2>Tanya Jawab (FAQ)</h2>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false">Berapa lama proses pembuatan website?</button>
+          <div class="accordion-content">
+            <p>Waktu pengerjaan bergantung pada kompleksitas fitur. Rata-rata memakan waktu 2 hingga 4 minggu.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false">Apakah ada garansi setelah proyek selesai?</button>
+          <div class="accordion-content">
+            <p>Ya, kami memberikan dukungan teknis dan garansi selama 3 bulan setelah proyek diserahterimakan.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false">Bagaimana sistem pembayarannya?</button>
+          <div class="accordion-content">
+            <p>Pembayaran dibagi menjadi termin 50% di muka dan 50% setelah proyek selesai.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <h2>Hubungi Kami</h2>
+      <div class="form-wrapper">
+        <div id="form-success" class="success-msg hidden">Terima kasih! Pesan Anda telah berhasil dikirim.</div>
+        <form id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Nama Lengkap</label>
+            <input type="text" id="name" name="name" required aria-required="true">
+            <span class="error-msg" id="name-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required aria-required="true">
+            <span class="error-msg" id="email-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+            <span class="error-msg" id="message-error"></span>
+          </div>
+          <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 - 251511056.</p>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Kembali ke atas">↑</button>
+
+</body>
+</html>
